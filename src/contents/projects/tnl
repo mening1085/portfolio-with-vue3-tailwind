@@ -1,0 +1,19 @@
+---
+title: TN Logistic System
+description: เป็นระบบจัดการ การรับส่งตู้คอนเทรนเนอร์ ไปยังปลายทาง โดยจะมีขั้นตอนการทำงานต่างๆ ตั้งแต่ สร้าง Order เลือก Carrier, รถ, คนขับ จนไปถึงการออกใบวางบิลที่ Export ออกมาเป็น PDF file พร้อมระบบส่ง Email ไปยังผู้ให้บริการที่ได้เลือกไว้ เพื่อแจ้งเตือนตามขั้นตอนต่างๆ ของระบบ ทำให้กับหน่วยงานเอกชน
+skill:
+  - VueJS
+  - Laravel
+created_at: 2021-2022
+thumbnail: /project/TNL/Order.png
+alt: TN Logistic System
+link: https://tnlogistic.com/
+images_desktop:
+  - /project/TNL/Order.png
+  - /project/TNL/Order _ Import _ create.png
+  - /project/TNL/Tender 1.png
+  - /project/TNL/Truck Supply.png
+  - /project/TNL/แบบแจ้งดำเนินการส่งออก.png
+  - /project/TNL/Email _ Notification 1.png
+images_mobile:
+---
