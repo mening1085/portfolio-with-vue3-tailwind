@@ -46,7 +46,7 @@ const images = reactive([
 </script>
 
 <template>
-  <div class="grid grid-cols-5 gap-4">
+  <div class="grid lg:grid-cols-3 xl:grid-cols-5 grid-cols-2 gap-4">
     <div class="p-6 flex justify-center" v-for="(item, i) in images" :key="i">
       <img
         @click="toggleDialog(item.src)"

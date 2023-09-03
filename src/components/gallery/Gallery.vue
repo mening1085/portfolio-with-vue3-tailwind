@@ -19,9 +19,9 @@ const images = reactive([
 ]);
 
 const imgSrc = ref("");
-const toggleDialog = (image) => {
+const toggleDialog = (image, valDialog) => {
+  isDialog.value = valDialog;
   imgSrc.value = image;
-  isDialog.value = !isDialog.value;
 };
 </script>
 <template>
@@ -33,8 +33,8 @@ const toggleDialog = (image) => {
         :key="i"
       >
         <img
-          @click="toggleDialog(item.src)"
-          class="object-center object-cover w-full rounded h-48 overflow-hidden"
+          @click="toggleDialog(item.src, true)"
+          class="object-top object-cover w-full rounded h-48 overflow-hidden"
           :src="item.src"
           alt="banner"
         />
@@ -43,18 +43,18 @@ const toggleDialog = (image) => {
 
     <div
       v-if="isDialog"
-      @click="toggleDialog()"
+      @click="toggleDialog(null, false)"
       class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
     >
       <div class="bg-white rounded-md shadow-md relative">
         <button
-          @click="toggleDialog()"
+          @click="toggleDialog(null, false)"
           class="w-6 h-6 flex justify-center items-center bg-gray-900 rounded-full shadow-md absolute top-2 right-2 z-20"
         >
           <Icon icon="fa-solid:times" class="text-sm text-white" />
         </button>
         <img
-          class="object-center object-cover overflow-hidden max-w-3xl max-h-3xl"
+          class="object-center object-cover overflow-hidden max-w-sm max-h-sm sm:max-w-3xl sm:max-h-3xl"
           :src="imgSrc"
           alt="banner"
         />

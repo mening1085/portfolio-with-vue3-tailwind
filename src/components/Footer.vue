@@ -3,8 +3,10 @@ import { Icon } from "@iconify/vue";
 </script>
 <template>
   <div class="border-t-2 py-4 border-gray-200 dark:bg-gray-800">
-    <div class="container mx-auto flex justify-between items-center">
-      <div class="flex justify-center">
+    <div
+      class="container mx-auto flex justify-center sm:justify-between items-center flex-wrap"
+    >
+      <div class="flex justify-center mb-4 sm:mb-0">
         <a href="https://github.com/mening1085" target="_blank" class="mx-2">
           <Icon
             icon="mdi:github"
@@ -43,7 +45,7 @@ import { Icon } from "@iconify/vue";
         </a>
       </div>
       <div class="flex justify-center items-center">
-        <p class="text-gray-500 dark:text-gray-400">
+        <p class="text-gray-500 dark:text-gray-400 pr-4">
           © 2023 - All rights reserved
         </p>
       </div>

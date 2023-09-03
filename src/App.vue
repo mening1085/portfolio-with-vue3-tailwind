@@ -75,10 +75,11 @@ onMounted(() => {
       <Header v-if="showHeader" />
     </Transition>
 
-    <div class="pt-6 pb-12 bg-gray-100 dark:bg-gray-800">
+    <div class="pt-6 pb-12 bg-gray-100 dark:bg-gray-800 px-0 sm:px-6">
       <div class="container mx-auto">
-        <div class="flex flex-row gap-4">
-          <div class="basis-1/3">
+        <div class="flex gap-4 flex-col lg:flex-row">
+          <!-- Information -->
+          <div class="md:basis-1/3 basis-full">
             <!-- Information -->
             <Transition name="slide-fade" mode="out-in">
               <Information v-if="showInfo" />
@@ -90,7 +91,9 @@ onMounted(() => {
               </Card>
             </Transition>
           </div>
-          <div class="basis-2/3">
+
+          <!-- Tab -->
+          <div class="md:basis-2/3 basis-full">
             <Transition name="slide-fade">
               <Card v-if="showContent">
                 <!-- Tab -->
