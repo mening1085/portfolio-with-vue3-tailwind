@@ -17,7 +17,7 @@ const portfolios = reactive([
           "สร้าง Component ที่จำเป็น",
           "Support, Review code และแก้ไขปัญหาต่างๆ",
         ],
-        technology: ["Nuxt.js", "Node.js", "PostgreSQL"],
+        technology: ["Vue.js", "Node.js", "PostgreSQL"],
         link: "",
       },
       {
@@ -163,7 +163,7 @@ const portfolios = reactive([
           "แก้ไขปัญหาที่พบ",
         ],
         technology: ["Vue.js", "Laravel", "Pusher", "MySQL"],
-        link: "https://pmuc.ksta.co",
+        link: "https://oscc.consulting/",
       },
       {
         title: "TN Logistic System (Driver phase 2)",
@@ -240,7 +240,7 @@ const portfolios = reactive([
           "เป็นระบบจัดการ การรับส่งตู้คอนเทรนเนอร์ ไปยังปลายทาง โดยจะมีขั้นตอนการทำงานต่างๆ ตั้งแต่ สร้าง Order เลือก Carrier, รถ, คนขับ จนไปถึงการออกใบวางบิลที่ Export ออกมาเป็น PDF file พร้อมระบบส่ง Email ไปยังผู้ให้บริการที่ได้เลือกไว้ เพื่อแจ้งเตือนตามขั้นตอนต่างๆ ของระบบ ทำให้กับหน่วยงานเอกชน",
         detail: ["ออกแบบ Database", "Frontend", "Backend", "Deploy"],
         technology: ["Vue.js", "Laravel", "MySQL"],
-        link: "",
+        link: "https://tnlogistic.ksta.co",
       },
       {
         title: "TCDC Connect by CEA",

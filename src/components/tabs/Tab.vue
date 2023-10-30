@@ -21,7 +21,7 @@ defineProps({
         title="Skill"
         @onClickItemTab="$emit('onClickTab', $event)"
       />
-      <tab-item
+      <!-- <tab-item
         :value="tabs"
         :tabs="2"
         title="Hobbies"
@@ -32,7 +32,7 @@ defineProps({
         :tabs="3"
         title="Contacts"
         @onClickItemTab="$emit('onClickTab', $event)"
-      />
+      /> -->
     </ul>
   </div>
 </template>

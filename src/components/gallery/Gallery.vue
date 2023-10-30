@@ -34,7 +34,7 @@ const toggleDialog = (image, valDialog) => {
       >
         <img
           @click="toggleDialog(item.src, true)"
-          class="object-top object-cover w-full rounded h-48 overflow-hidden"
+          class="object-top object-cover w-full h-[192px] rounded grayscale hover:grayscale-0 transition-all cursor-pointer transition-all duration-800 ease-in-out transform hover:scale-105 hover:shadow-xl hover:rotate-3"
           :src="item.src"
           alt="banner"
         />

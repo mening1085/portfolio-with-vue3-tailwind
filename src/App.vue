@@ -75,7 +75,7 @@ onMounted(() => {
       <Header v-if="showHeader" />
     </Transition>
 
-    <div class="pt-6 pb-12 bg-gray-100 dark:bg-gray-800 px-0 sm:px-6">
+    <div class="pt-6 pb-12 bg-gray-100 dark:bg-gray-800 px-4">
       <div class="container mx-auto">
         <div class="flex gap-4 flex-col lg:flex-row">
           <!-- Information -->
@@ -86,7 +86,7 @@ onMounted(() => {
             </Transition>
 
             <Transition name="slide-fade">
-              <Card class="mt-6" v-if="showGallery">
+              <Card class="mt-6" customClass="card__gallery" v-if="showGallery">
                 <gallery />
               </Card>
             </Transition>
@@ -95,28 +95,28 @@ onMounted(() => {
           <!-- Tab -->
           <div class="md:basis-2/3 basis-full">
             <Transition name="slide-fade">
-              <Card v-if="showContent">
+              <Card v-if="showContent" customClass="">
                 <!-- Tab -->
                 <Tab :tabs="tabs" @onClickTab="changeTab($event)" />
 
                 <!-- Tab content -->
                 <Transition name="slide-fade">
-                  <div v-if="tabs == 0">
+                  <div class="card__portfolio" v-if="tabs == 0">
                     <Portfolio />
                   </div>
                 </Transition>
                 <Transition name="slide-fade">
-                  <div v-if="tabs == 1">
+                  <div class="card__portfolio" v-if="tabs == 1">
                     <Skill />
                   </div>
                 </Transition>
                 <Transition name="slide-fade">
-                  <div v-if="tabs == 2">
+                  <div class="card__portfolio" v-if="tabs == 2">
                     <hobby />
                   </div>
                 </Transition>
                 <Transition name="slide-fade">
-                  <div v-if="tabs == 3">
+                  <div class="card__portfolio" v-if="tabs == 3">
                     <div class="mt-6">
                       <h1 class="text-2xl font-bold">Contact</h1>
                       <p class="mt-2">Lorem ipsum</p>
@@ -149,5 +149,20 @@ onMounted(() => {
 .slide-fade-leave-to {
   transform: translateX(20px);
   opacity: 0;
+}
+.card__portfolio {
+  height: 685px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card__gallery {
+  height: 435px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 </style>

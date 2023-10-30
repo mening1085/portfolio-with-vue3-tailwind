@@ -21,7 +21,7 @@ import VueWriter from "vue-writer";
           <div class="flex justify-center">
             <img
               class="w-52 h-52 rounded-full object-cover object-top overflow-hidden -mt-24 border-8 border-white dark:shadow-md dark:shadow-white/60"
-              src="../assets/images/avatar2.jpeg"
+              src="../assets/images/gallery/me_8.jpeg"
               alt="avatar"
             />
           </div>
@@ -31,18 +31,18 @@ import VueWriter from "vue-writer";
                 <div class="text-5xl font-bold dark:text-white border-b pb-1">
                   <VueWriter
                     :typeSpeed="100"
-                    :delay="100000"
+                    :delay="10000"
                     :array="['Kasem Tanson']"
                   />
                 </div>
                 <div
-                  class="text-2xl mt-1 font-semibold text-gray-600 dark:text-gray-400"
+                  class="text-xl mt-1 font-semibold text-gray-600 dark:text-gray-400"
                 >
                   <VueWriter
-                    :typeSpeed="100"
-                    :delay="100000"
-                    :start="1500"
-                    :array="['Web Developer / Photographer']"
+                    :typeSpeed="40"
+                    :delay="10000"
+                    :start="1000"
+                    :array="['Full-Stack Developer / Photographer']"
                   />
                 </div>
               </div>
